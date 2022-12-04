@@ -1,3 +1,5 @@
+//BUBBLE SORT
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -7,9 +9,9 @@ void swap(int *a, int *b){
     *b = temp;
 }
 /*
-Esta função serve para a troca dos números que serão comparados pela função "bubbleSort"
-Caso a função consiga uma comparação onde o número é maior que o outro, serão trocados pelo simples ato de um receber o outro
-Ou seja, as funções recebem dois novos valores, equivalentes aqueles que estão sendo comparados
+Esta funÃ§Ã£o serve para a troca dos nÃºmeros que serÃ£o comparados pela funÃ§Ã£o "bubbleSort"
+Caso a funÃ§Ã£o consiga uma comparaÃ§Ã£o onde o nÃºmero Ã© maior que o outro, serÃ£o trocados pelo simples ato de um receber o outro
+Ou seja, as funÃ§Ãµes recebem dois novos valores, equivalentes aqueles que estÃ£o sendo comparados
 */
 void bubbleSort(int *v, int n){
     if (n < 1)return;
@@ -20,8 +22,8 @@ void bubbleSort(int *v, int n){
     bubbleSort(v, n-1);
 }
 /*
-Esta função compara os números selecionados através do "scanf", tendo um looping onde if compara o primeiro valor do vetor com o próximo(v[i] > v[i+1])
-Com isso, caso o valor comparado seja um número maior, a troca é executada pela função "swap"
+Esta funÃ§Ã£o compara os nÃºmeros selecionados atravÃ©s do "scanf", tendo um looping onde if compara o primeiro valor do vetor com o prÃ³ximo(v[i] > v[i+1])
+Com isso, caso o valor comparado seja um nÃºmero maior, a troca Ã© executada pela funÃ§Ã£o "swap"
 */
 
 int main(){
@@ -34,13 +36,13 @@ int main(){
     return 0;
 }
 /*
-Primeiramente, a função main faz com que o usuário escolha quantas posições terão o vetor, juntamente de uma lógica que envolve
-a integração da variável "v" em uma variável inteira, esta que é baseada no tamanho do vetor
-Com isso, um primeiro looping é feito para que a função "bubbleSort" esteja integrada ao ato de escolher os valores daquele vetor (de tamanho
-estabelecido pelo usuário)
-Por último, um segundo looping é criado para o simples ato de " printar " na tela do os números já em ordem
+Primeiramente, a funÃ§Ã£o main faz com que o usuÃ¡rio escolha quantas posiÃ§Ãµes terÃ£o o vetor, juntamente de uma lÃ³gica que envolve
+a integraÃ§Ã£o da variÃ¡vel "v" em uma variÃ¡vel inteira, esta que Ã© baseada no tamanho do vetor
+Com isso, um primeiro looping Ã© feito para que a funÃ§Ã£o "bubbleSort" esteja integrada ao ato de escolher os valores daquele vetor (de tamanho
+estabelecido pelo usuÃ¡rio)
+Por Ãºltimo, um segundo looping Ã© criado para o simples ato de " printar " na tela do os nÃºmeros jÃ¡ em ordem
 */
 
-// A ordenação feita pelo método " Bubble Sort " é simples, pois é apenas uma comparação de elementos adjacentes
-// Desta forma, compara uma posição a outra até que as duas recebem novos valores (os mesmo comparados)
-// Todas as funções funcionam até que não existam mais posições a serem comparadas, ou seja, todos os números estejam ordenados
+// A ordenaÃ§Ã£o feita pelo mÃ©todo " Bubble Sort " Ã© simples, pois Ã© apenas uma comparaÃ§Ã£o de elementos adjacentes
+// Desta forma, compara uma posiÃ§Ã£o a outra atÃ© que as duas recebem novos valores (os mesmo comparados)
+// Todas as funÃ§Ãµes funcionam atÃ© que nÃ£o existam mais posiÃ§Ãµes a serem comparadas, ou seja, todos os nÃºmeros estejam ordenados
